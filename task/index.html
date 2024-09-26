@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Stopwatch App</h1>
+
+        <!-- Stopwatch Display -->
+        <div class="stopwatch-container">
+            <p class="stopwatch-time" data-timerDisplay>00:00:00.00</p>
+
+            <!-- Buttons: Start, Stop, Reset, Record -->
+            <div class="button-container">
+                <button class="btn" data-start>Start</button>
+                <button class="btn" data-stop>Stop</button>
+                <button class="btn" data-reset>Reset</button>
+                <button class="btn" data-record>Record Lap</button>
+            </div>
+        </div>
+
+        <!-- Laps Container -->
+        <div class="laps-container">
+            <h2>Laps</h2>
+            <ul class="laps-list" data-lapsList>
+                <!-- Laps will be appended here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
